@@ -12,7 +12,9 @@ class User(models.Model):
         models.session.commit()
 
 
-
+class Student(models.Model):
+    id = models.Column(models.Integer,primary_key=True)
+    username = models.Column(models.String(32))
 
 
 

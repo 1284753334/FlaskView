@@ -25,6 +25,11 @@ def adduser():
     user.save()
     return "保存成功"
 
+@blue.route('/dropdb/')
+def dropdb():
+    models.drop_all()
+    return  '删除成功'
+
 
 
 
