@@ -20,8 +20,9 @@ def adduser():
     user = User()
     user.username = 'Tom'
 
-    models.session.add(user)
-    models.session.commit()
+    # models.session.add(user)
+    # models.session.commit()
+    user.save()
     return "保存成功"
 
 
